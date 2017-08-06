@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Solvia</title>
-    <link>https://hisdisgrace.github.io/</link>
-    <description>Recent content on Solvia</description>
+    <title>Lyrics on Solvia</title>
+    <link>https://hisdisgrace.github.io/lyrics/</link>
+    <description>Recent content in Lyrics on Solvia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Aug 2017 03:24:57 +0200</lastBuildDate>
     
-	<atom:link href="https://hisdisgrace.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hisdisgrace.github.io/lyrics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
