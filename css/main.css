@@ -2272,18 +2272,6 @@ table {
   overflow: visible;
   clip: auto; }
 
-.player,
-.content {
-  margin-top: 30px; }
-
-.content {
-  max-width: 320px;
-  margin: 30px  auto 0; }
-
-.player iframe {
-  margin: 0 auto;
-  display: block; }
-
 @media all and (min-width: 40.625em) {
   .player,
   .content {
@@ -2335,6 +2323,7 @@ body {
   font-size: 1.4rem;
   font-family: "Arimo", sans-serif;
   color: #666;
+  min-width: 320px;
   background-color: #111;
   background-attachment: fixed;
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%23000000' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E"); }
@@ -2384,6 +2373,28 @@ canvas {
   display: block;
   vertical-align: bottom; }
 
+hr {
+  border-top: 1px solid #393939;
+  border-right: none;
+  border-bottom: none;
+  border-left: none; }
+
+.content {
+  padding: 0 20px;
+  margin: 0 20px; }
+  @media all and (min-width: 51.25em) {
+    .content {
+      padding: 0;
+      margin: 0; } }
+
+.player,
+.content {
+  margin-top: 30px; }
+
+.player iframe {
+  margin: 0 auto;
+  display: block; }
+
 .song-list {
   background-color: #333333;
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -2406,6 +2417,9 @@ canvas {
       .content .layout ol li:first-child a {
         border-top: 1px solid rgba(255, 255, 255, 0.15); }
 
+.lyrics ul li {
+  font-style: italic; }
+
 .headerImage {
   background: url(../img/SolviaBanner.jpg);
   height: 700px;
@@ -2417,23 +2431,27 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-sizing: border-box;
   margin-top: 20px;
-  padding: 10px;
-  display: flow-root; }
-  footer .layout {
+  padding: 10px 0; }
+  footer .icons {
     max-width: 1080px;
-    margin: 0 auto; }
-  footer a {
-    float: right;
-    display: inline-block; }
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
 
 a {
   color: #666;
   text-decoration: none;
-  font-size: 2.4rem;
   padding: 10px;
   min-width: 30px;
   display: inline-block;
   text-align: center; }
+  @media all and (min-width: 40.625em) {
+    a {
+      font-size: 2.4rem; } }
   a:hover {
     background-color: #222; }
   a:visited {
@@ -2442,3 +2460,16 @@ a {
 svg {
   fill: #000;
   margin-top: 20%; }
+
+.flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px; }
+  .flex .previous, .flex .next {
+    background-color: #333333; }
+  .flex .next {
+    margin-right: 15px; }
