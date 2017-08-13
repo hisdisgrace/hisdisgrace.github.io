@@ -2469,10 +2469,13 @@ nav {
 
 #headerImage {
   background: url(../img/SolviaSun.jpg);
-  background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: scroll; }
+  @media all and (min-width: 40.625em) {
+    #headerImage {
+      background-attachment: fixed; } }
 
 footer {
   background-color: #333333;
