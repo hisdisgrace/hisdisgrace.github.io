@@ -2287,8 +2287,7 @@ table {
     width: 42.30769%;
     float: right;
     margin-right: 0;
-    margin-right: 6.41026%;
-    max-width: initial; } }
+    margin-right: 6.41026%; } }
 
 @media all and (min-width: 51.25em) {
   .player {
@@ -2379,6 +2378,54 @@ hr {
   border-bottom: none;
   border-left: none; }
 
+nav {
+  position: fixed;
+  top: -50px;
+  z-index: 100;
+  transition: top 0.5s ease-out;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+  nav a,
+  nav a:visited {
+    font-family: "Cinzel Decorative", cursive;
+    font-size: 2.6rem;
+    color: #fff;
+    line-height: 3rem;
+    padding: 10px 10px 5px; }
+  nav img {
+    cursor: pointer;
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+    width: 100px; }
+  nav.active {
+    top: 0px; }
+  nav .icons {
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+
+#homeTitle img {
+  transition: all 0.5s ease-out;
+  width: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0; }
+
+#homeTitle.active img {
+  max-width: 1080px;
+  width: 95%;
+  opacity: 1; }
+
 .content {
   padding: 0 20px;
   margin: 0 20px; }
@@ -2420,11 +2467,13 @@ hr {
 .lyrics ul li {
   font-style: italic; }
 
-.headerImage {
-  background: url(../img/SolviaBanner.jpg);
-  height: 700px;
-  width: 100%;
-  background-position: center center; }
+#headerImage {
+  background: url(../img/SolviaSun.jpg);
+  height: 1920px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 footer {
   background-color: #333333;
@@ -2433,14 +2482,16 @@ footer {
   margin-top: 20px;
   padding: 10px 0; }
   footer .icons {
-    max-width: 1080px;
-    margin: 0 auto;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
+
+.icons {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 a {
   color: #666;
