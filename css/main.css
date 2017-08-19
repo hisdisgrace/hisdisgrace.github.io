@@ -86,15 +86,15 @@ table {
         clear: both; } }
 
 /*!
- *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -175,52 +175,35 @@ table {
   margin-left: .3em; }
 
 .fa-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear; }
 
 .fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8); }
-
-@-webkit-keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg); } }
 
 @keyframes fa-spin {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
-    -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
 
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
-  -webkit-transform: rotate(90deg);
   transform: rotate(90deg); }
 
 .fa-rotate-180 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
-  -webkit-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .fa-rotate-270 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
-  -webkit-transform: rotate(270deg);
   transform: rotate(270deg); }
 
 .fa-flip-horizontal {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
-  -webkit-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 
 .fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-  -webkit-transform: scale(1, -1);
   transform: scale(1, -1); }
 
 :root .fa-rotate-90,
@@ -228,8 +211,7 @@ table {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none; }
+  filter: none; }
 
 .fa-stack {
   position: relative;
@@ -1908,6 +1890,7 @@ table {
   content: ""; }
 
 .fa-battery-4:before,
+.fa-battery:before,
 .fa-battery-full:before {
   content: ""; }
 
@@ -2254,6 +2237,143 @@ table {
 .fa-font-awesome:before {
   content: ""; }
 
+.fa-handshake-o:before {
+  content: ""; }
+
+.fa-envelope-open:before {
+  content: ""; }
+
+.fa-envelope-open-o:before {
+  content: ""; }
+
+.fa-linode:before {
+  content: ""; }
+
+.fa-address-book:before {
+  content: ""; }
+
+.fa-address-book-o:before {
+  content: ""; }
+
+.fa-vcard:before,
+.fa-address-card:before {
+  content: ""; }
+
+.fa-vcard-o:before,
+.fa-address-card-o:before {
+  content: ""; }
+
+.fa-user-circle:before {
+  content: ""; }
+
+.fa-user-circle-o:before {
+  content: ""; }
+
+.fa-user-o:before {
+  content: ""; }
+
+.fa-id-badge:before {
+  content: ""; }
+
+.fa-drivers-license:before,
+.fa-id-card:before {
+  content: ""; }
+
+.fa-drivers-license-o:before,
+.fa-id-card-o:before {
+  content: ""; }
+
+.fa-quora:before {
+  content: ""; }
+
+.fa-free-code-camp:before {
+  content: ""; }
+
+.fa-telegram:before {
+  content: ""; }
+
+.fa-thermometer-4:before,
+.fa-thermometer:before,
+.fa-thermometer-full:before {
+  content: ""; }
+
+.fa-thermometer-3:before,
+.fa-thermometer-three-quarters:before {
+  content: ""; }
+
+.fa-thermometer-2:before,
+.fa-thermometer-half:before {
+  content: ""; }
+
+.fa-thermometer-1:before,
+.fa-thermometer-quarter:before {
+  content: ""; }
+
+.fa-thermometer-0:before,
+.fa-thermometer-empty:before {
+  content: ""; }
+
+.fa-shower:before {
+  content: ""; }
+
+.fa-bathtub:before,
+.fa-s15:before,
+.fa-bath:before {
+  content: ""; }
+
+.fa-podcast:before {
+  content: ""; }
+
+.fa-window-maximize:before {
+  content: ""; }
+
+.fa-window-minimize:before {
+  content: ""; }
+
+.fa-window-restore:before {
+  content: ""; }
+
+.fa-times-rectangle:before,
+.fa-window-close:before {
+  content: ""; }
+
+.fa-times-rectangle-o:before,
+.fa-window-close-o:before {
+  content: ""; }
+
+.fa-bandcamp:before {
+  content: ""; }
+
+.fa-grav:before {
+  content: ""; }
+
+.fa-etsy:before {
+  content: ""; }
+
+.fa-imdb:before {
+  content: ""; }
+
+.fa-ravelry:before {
+  content: ""; }
+
+.fa-eercast:before {
+  content: ""; }
+
+.fa-microchip:before {
+  content: ""; }
+
+.fa-snowflake-o:before {
+  content: ""; }
+
+.fa-superpowers:before {
+  content: ""; }
+
+.fa-wpexplorer:before {
+  content: ""; }
+
+.fa-meetup:before {
+  content: ""; }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -2274,20 +2394,17 @@ table {
 
 @media all and (min-width: 40.625em) {
   .player,
-  .content {
-    margin-left: 0%;
-    margin-right: 0%; }
-  .player {
+  .youtubtContainer {
     width: 48.71795%;
     float: left;
     margin-right: 2.5641%; }
-    .player iframe {
+    .player iframe,
+    .youtubtContainer iframe {
       margin: 0 2.63158%; }
   .content {
-    width: 42.30769%;
+    width: 48.71795%;
     float: right;
-    margin-right: 0;
-    margin-right: 6.41026%; } }
+    margin-right: 0; } }
 
 @media all and (min-width: 51.25em) {
   .player {
@@ -2296,10 +2413,12 @@ table {
     float: left;
     margin-right: 1.69492%;
     margin-right: 8.47458%; }
-  .content {
-    width: 49.15254%;
-    float: left;
-    margin-right: 1.69492%; } }
+  .content,
+  .youtubtContainer {
+    width: 40.67797%;
+    float: right;
+    margin-right: 0;
+    margin-right: 8.47458%; } }
 
 @media all and (min-width: 65.625em) {
   .player {
@@ -2308,11 +2427,13 @@ table {
     float: left;
     margin-right: 1.44928%;
     margin-right: 0%; }
-  .content {
+  .content,
+  .youtubtContainer {
+    margin-left: 7.24638%;
     width: 49.27536%;
-    float: left;
-    margin-right: 1.44928%;
-    margin-right: 7.24638%; } }
+    float: right;
+    margin-right: 0;
+    margin-right: 0%; } }
 
 html {
   font-size: 62.5%; }
@@ -2390,12 +2511,10 @@ nav {
   background-color: rgba(0, 0, 0, 0.7);
   border-right: 1px solid rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch; }
+  -ms-flex-align: stretch;
+      align-items: stretch; }
   nav a,
   nav a:visited {
     font-family: "Cinzel Decorative", cursive;
@@ -2405,15 +2524,13 @@ nav {
     padding: 10px 10px 5px; }
   nav img {
     cursor: pointer;
-    -webkit-filter: brightness(0) invert(1);
-            filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
     width: 100px; }
   nav.active {
     top: 0px; }
   nav .icons {
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
+    -ms-flex-pack: start;
+        justify-content: flex-start; }
 
 #homeTitle img {
   transition: all 0.5s ease-out;
@@ -2421,8 +2538,7 @@ nav {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   opacity: 0; }
 
 #homeTitle.active img {
@@ -2430,13 +2546,51 @@ nav {
   width: 95%;
   opacity: 1; }
 
-.content {
-  padding: 0 20px;
-  margin: 0 20px; }
+.grid {
+  padding: 0 20px; }
   @media all and (min-width: 51.25em) {
-    .content {
-      padding: 0;
-      margin: 0; } }
+    .grid {
+      padding: 0; } }
+
+.content {
+  padding: 0 20px; }
+
+.donation {
+  padding: 20px; }
+  .donation .icons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .donation p {
+    font-size: 2.4rem;
+    line-height: 2.8rem; }
+  .donation a {
+    font-size: 4.2rem;
+    line-height: 4.6rem;
+    min-width: 50px;
+    margin: 0 30px; }
+
+.youtubtContainer {
+  background-color: #333333;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-sizing: border-box;
+  margin-top: 30px; }
+
+.youtube {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; }
+  .youtube iframe {
+    margin: 0; }
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .player,
 .content {
@@ -2447,6 +2601,11 @@ nav {
   display: block; }
 
 .song-list {
+  background-color: #333333;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-sizing: border-box; }
+
+.donation {
   background-color: #333333;
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-sizing: border-box; }
@@ -2476,7 +2635,8 @@ nav {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: scroll; }
+  background-attachment: scroll;
+  border-bottom: 5px solid #222; }
   @media all and (min-width: 40.625em) {
     #headerImage {
       background-attachment: fixed; } }
@@ -2488,14 +2648,12 @@ footer {
   margin-top: 20px;
   padding: 10px 0; }
   footer .icons {
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
 
 .icons {
   max-width: 1080px;
   margin: 0 auto;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
@@ -2522,12 +2680,10 @@ svg {
   margin-top: 20%; }
 
 .flex {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   padding-top: 20px; }
   .flex .previous, .flex .next {
     background-color: #333333; }
