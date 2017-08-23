@@ -1,3 +1,0 @@
-#+TITLE: What are you doing here?
-
-Go here [[http://solvia.co.za][solvia.co.za]].
