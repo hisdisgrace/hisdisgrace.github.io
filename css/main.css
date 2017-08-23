@@ -2415,10 +2415,10 @@ table {
     margin-right: 8.47458%; }
   .content,
   .youtubtContainer {
-    width: 44.91525%;
+    width: 40.67797%;
     float: right;
     margin-right: 0;
-    margin-right: 4.23729%; } }
+    margin-right: 8.47458%; } }
 
 @media all and (min-width: 65.625em) {
   .player {
@@ -2429,11 +2429,11 @@ table {
     margin-right: 0%; }
   .content,
   .youtubtContainer {
-    margin-left: 3.62319%;
+    margin-left: 7.24638%;
     width: 49.27536%;
     float: right;
     margin-right: 0;
-    margin-right: 3.62319%; } }
+    margin-right: 0%; } }
 
 html {
   font-size: 62.5%; }
@@ -2532,6 +2532,20 @@ nav {
     -ms-flex-pack: start;
         justify-content: flex-start; }
 
+#homeTitle img {
+  transition: all 0.5s ease-out;
+  width: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; }
+
+#homeTitle.active img {
+  max-width: 1080px;
+  width: 95%;
+  opacity: 1; }
+
 .grid {
   padding: 0 20px; }
   @media all and (min-width: 51.25em) {
@@ -2541,22 +2555,17 @@ nav {
 .content {
   padding: 0 20px; }
 
-.support {
-  background-color: #333333;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-sizing: border-box;
-  padding: 20px;
-  max-width: 320px;
-  margin: 30px auto 0; }
-  .support .icons {
+.donation {
+  padding: 20px; }
+  .donation .icons {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center; }
-  .support p {
-    font-size: 1.6rem;
+  .donation p {
+    font-size: 2.4rem;
     line-height: 2.8rem; }
-  .support a {
+  .donation a {
     font-size: 4.2rem;
     line-height: 4.6rem;
     min-width: 50px;
@@ -2596,6 +2605,11 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-sizing: border-box; }
 
+.donation {
+  background-color: #333333;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-sizing: border-box; }
+
 .content {
   background-color: #333333;
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -2613,10 +2627,8 @@ nav {
       .content .layout ol li:first-child a {
         border-top: 1px solid rgba(255, 255, 255, 0.15); }
 
-.lyrics {
-  padding-bottom: 20px; }
-  .lyrics ul li {
-    font-style: italic; }
+.lyrics ul li {
+  font-style: italic; }
 
 #headerImage {
   background: url(../img/SolviaSun.jpg);
@@ -2624,25 +2636,10 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
-  border-bottom: 5px solid #222;
-  overflow: hidden;
-  position: relative; }
+  border-bottom: 5px solid #222; }
   @media all and (min-width: 40.625em) {
     #headerImage {
       background-attachment: fixed; } }
-
-#homeTitle {
-  max-width: 1080px;
-  position: absolute;
-  transition: width 0.6s, opacity 0.6s, top 0.6s;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  width: 30%;
-  opacity: 0; }
-  #homeTitle.active {
-    width: 100%;
-    opacity: 1; }
 
 footer {
   background-color: #333333;
@@ -2674,6 +2671,9 @@ a {
     background-color: #222; }
   a:visited {
     color: #d3d3d2; }
+
+.bio {
+  text-align: center; }
 
 svg {
   fill: #000;

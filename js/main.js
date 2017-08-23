@@ -7,7 +7,7 @@
                 scrollTop: 0,
                 header: document.getElementById('headerImage'),
                 title: document.getElementById('homeTitle'),
-                nav: document.getElementById('nav') || null,
+                nav: document.getElementById('nav'),
                                 
                 setHeight: function( value, elem ) {
                     return (elem.setAttribute( 'style', 'height:'+value+'px' ));
@@ -24,10 +24,10 @@
         Module.scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
         
         if(Module.scrollTop >= 5) {
-            if(Module.nav){ Module.nav.classList.add("active"); }
+            Module.nav.classList.add("active");
             Module.title.classList.remove('active');
         } else {
-            if(Module.nav){ Module.nav.classList.remove("active"); }
+            Module.nav.classList.remove("active");
             Module.title.classList.add('active');
         }
         
