@@ -2551,9 +2551,6 @@ nav {
     .grid {
       padding: 0; } }
 
-.content {
-  padding: 0 20px; }
-
 .support {
   background-color: #333333;
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -2595,10 +2592,6 @@ nav {
   left: 0;
   width: 100%;
   height: 100%; }
-
-.player,
-.content {
-  margin-top: 30px; }
 
 .shows {
   overflow: hidden; }
@@ -2647,7 +2640,9 @@ nav {
 .content {
   background-color: #333333;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin-top: 30px; }
   .content .layout {
     padding: 10px 10px 15px; }
     .content .layout ul, .content .layout p {
