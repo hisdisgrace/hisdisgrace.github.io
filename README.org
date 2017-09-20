@@ -1,3 +1,3 @@
 #+TITLE: What are you doing here?
 
-This is the compiled output, go here [[http://solvia.co.za][solvia.co.za]] instead.
+Go here [[http://solvia.co.za][solvia.co.za]].
