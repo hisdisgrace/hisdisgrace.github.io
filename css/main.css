@@ -2469,10 +2469,6 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
   color: #999; }
 
-.lyrics-title {
-  font-weight: 300;
-  font-family: "Cinzel Decorative", cursive; }
-
 h1, h2 {
   font-size: 3.8rem;
   line-height: 4.2rem; }
@@ -2550,6 +2546,20 @@ nav {
   @media all and (min-width: 51.25em) {
     .grid {
       padding: 0; } }
+
+.lyrics-title,
+.mp3-download {
+  font-weight: 300;
+  font-family: "Cinzel Decorative", cursive; }
+
+.mp3-download a {
+  line-height: 2.6rem;
+  width: 90%;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+
+.mp3-download.first a {
+  border-top: 1px solid rgba(255, 255, 255, 0.15); }
 
 .support {
   background-color: #333333;
@@ -2650,6 +2660,7 @@ nav {
     .content .layout ol {
       padding: 20px 0 5px; }
       .content .layout ol li a {
+        line-height: 2.6rem;
         width: 90%;
         text-align: left;
         border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
